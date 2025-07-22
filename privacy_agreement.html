@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conbello Textile: Confidentiality & Manufacturing Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1A202C;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-item {
+            border-color: #4299E1;
+            color: #E2E8F0;
+            background-color: #2D3748;
+        }
+        .flowchart-arrow {
+            color: #4299E1;
+        }
+        .brand-text-light { color: #E2E8F0; }
+        .brand-text-accent { color: #4299E1; }
+        .brand-bg-dark { background-color: #2D3748; }
+        .brand-bg-darker { background-color: #1A202C; }
+        .brand-border-accent { border-color: #4299E1; }
+    </style>
+</head>
+<body class="brand-bg-darker brand-text-light">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black brand-text-accent mb-2">Securing Your Vision</h1>
+            <p class="text-lg md:text-xl font-semibold brand-text-light">Why Conbello Textile is the Premier Partner for Confidential Fitness Apparel Manufacturing</p>
+            <p class="max-w-3xl mx-auto mt-4 text-base brand-text-light">In the competitive world of fitness apparel, your designs are your most valuable asset. Protecting them isn't just a feature; it's the foundation of your brand's future. Conbello Textile operates with a level of security and confidentiality inspired by military-technical protocols, ensuring your intellectual property remains yours alone.</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center mb-2 brand-text-accent">The Fortress: A Confidentiality-First Protocol</h2>
+                <p class="text-center max-w-2xl mx-auto mb-8 brand-text-light">Conbello Textile has engineered an end-to-end process with secure checkpoints at every stage. This systematic approach guarantees that from a simple sketch to global shipment, your designs are handled with the utmost discretion and security.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch space-y-4 md:space-y-0 md:space-x-4">
+
+                    <div class="flex-1 text-center p-4 rounded-lg border-2 flowchart-item">
+                        <div class="text-4xl mb-2">1️⃣</div>
+                        <h3 class="font-bold text-lg">NDA & Secure Onboarding</h3>
+                        <p class="text-sm">Formal Non-Disclosure Agreements establish a legally-binding confidential relationship before any sensitive information is shared.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center text-4xl font-bold flowchart-arrow transform md:rotate-0 rotate-90">→</div>
+
+                    <div class="flex-1 text-center p-4 rounded-lg border-2 flowchart-item">
+                        <div class="text-4xl mb-2">2️⃣</div>
+                        <h3 class="font-bold text-lg">In-House Design Analysis</h3>
+                        <p class="text-sm">Your designs are analyzed by a dedicated, internal technical team—never outsourced. This keeps your IP within a controlled environment.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center text-4xl font-bold flowchart-arrow transform md:rotate-0 rotate-90">→</div>
+                    
+                    <div class="flex-1 text-center p-4 rounded-lg border-2 flowchart-item">
+                        <div class="text-4xl mb-2">3️⃣</div>
+                        <h3 class="font-bold text-lg">Controlled Manufacturing</h3>
+                        <p class="text-sm">Production occurs in segmented, specialized departments, limiting broad exposure of the final design until assembly.</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-center text-4xl font-bold flowchart-arrow transform md:rotate-0 rotate-90">→</div>
+
+                    <div class="flex-1 text-center p-4 rounded-lg border-2 flowchart-item">
+                        <div class="text-4xl mb-2">4️⃣</div>
+                        <h3 class="font-bold text-lg">And a Final Word</h3>
+                        <p class="text-sm">Consistent garment quality every time, fast and on-time shipping.</p>
+                    </div>
+
+                </div>
+                <div class="mt-8 text-center p-4 rounded-lg border-2 flowchart-item">
+                    <p class="text-base font-semibold">Your clothing designs are already fully protected by our standard security protocol. However, if you want to take the security of Your unique designs to the next level, there are certain prerequisites for a Privacy Agreement. Some of these conditions include your design/brand receiving official approval (being registered in your name), obtaining a patent or utility model, and submitting these documents.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-center mb-4 brand-text-accent">Holistic Manufacturing Excellence</h3>
+                <p class="text-center mb-4 brand-text-light">Security is paramount, but it's matched by a deep and versatile manufacturing capability. Conbello Textile provides a complete ecosystem for bringing high-performance apparel to life.</p>
+                <div class="chart-container">
+                    <canvas id="capabilitiesRadarChart"></canvas>
+                </div>
+            </div>
+            <div class="brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-center mb-4 brand-text-accent">Unlimited and Unique Branding with 200 Different Printing Technologies</h3>
+                 <p class="text-center mb-4 brand-text-light">Beyond basic printing, Conbello Textile offers a vast array of cutting-edge technologies to make your brand's logo and design elements stand out with unique textures and durability.</p>
+                <div class="chart-container h-[400px] md:h-[350px]">
+                    <canvas id="printingTechBarChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+             <div class="brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                 <h2 class="text-3xl font-bold text-center mb-2 brand-text-accent">A Foundation of Quality & Trust</h2>
+                <p class="text-center max-w-2xl mx-auto mb-8 brand-text-light">Impressive capabilities are built on a bedrock of experience, global reach, and certified quality standards. These metrics demonstrate a reliable and established partner.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <p class="text-5xl font-black brand-text-accent">40+</p>
+                        <p class="font-semibold brand-text-light">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-black brand-text-accent">350+</p>
+                        <p class="font-semibold brand-text-light">Expert Personnel</p>
+                    </div>
+                     <div>
+                        <p class="text-5xl font-black brand-text-accent">40+</p>
+                        <p class="font-semibold brand-text-light">Countries Served</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-black brand-text-accent">15+</p>
+                        <p class="font-semibold brand-text-light">Major Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
+            <div class="md:col-span-3 brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                <h3 class="text-2xl font-bold mb-4 brand-text-accent">Your End-to-End Partnership Journey</h3>
+                <p class="mb-6 brand-text-light">Conbello Textile simplifies the complex process of apparel creation, offering invaluable support for new brands. Key services like design analysis and tech pack creation are provided free of charge, lowering barriers to entry.</p>
+                <div class="relative pl-8">
+                    <div class="absolute left-0 h-full w-1 bg-brand-text-accent rounded"></div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 rounded-full brand-text-accent ring-8 brand-bg-darker"></div>
+                        <h4 class="font-bold text-lg brand-text-light">1. Consultation & Ideation</h4>
+                        <p>Discuss your vision and receive expert technical advice on fabric, construction, and feasibility.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 rounded-full brand-text-accent ring-8 brand-bg-darker"></div>
+                        <h4 class="font-bold text-lg brand-text-light">2. Free Design Analysis & Tech Pack</h4>
+                        <p>Their experts translate your designs into a professional, production-ready technical package at no cost.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 rounded-full brand-text-accent ring-8 brand-bg-darker"></div>
+                        <h4 class="font-bold text-lg brand-text-light">3. Prototype & Sample Revisions</h4>
+                        <p>Receive a physical sample to test and refine. Conbello Textile works with you on revisions to perfect the product.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-11 top-0 w-6 h-6 rounded-full brand-text-accent ring-8 brand-bg-darker"></div>
+                        <h4 class="font-bold text-lg brand-text-light">4. Full-Scale, Secure Production</h4>
+                        <p>Once approved, your line goes into full production under their strict quality and confidentiality controls.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-2 brand-bg-dark rounded-lg shadow-xl p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-center mb-4 brand-text-accent">Specialized Production Focus</h3>
+                <p class="text-center mb-4 brand-text-light">Unlike generalist manufacturers producing low-quality promotional items, Conbello Textile is a specialist. Their resources are dedicated to creating high-value, durable, and technical apparel, ensuring your brand is associated with quality.</p>
+                <div class="chart-container h-64 md:h-80">
+                    <canvas id="productionFocusDonutChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-8 border-t-2 brand-border-accent">
+            <p class="text-2xl font-bold brand-text-accent">Partner with Confidence.</p>
+            <p class="max-w-2xl mx-auto mt-2 brand-text-light">Choose Conbello Textile to build your brand on a foundation of security, quality, and expertise.</p>
+            <a href="https://www.conbello.com/" target="_blank" class="mt-4 inline-block bg-brand-text-accent text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
+                Contact Conbello Textile
+            </a>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const universalTooltipCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            
+            const chartColors = {
+                darkBlue: '#4299E1',
+                steelBlue: '#63B3ED',
+                lightBlue: '#81E6D9',
+                powderBlue: '#9F7AEA',
+                darkBackground: '#2D3748'
+            };
+
+            const capabilitiesRadarCtx = document.getElementById('capabilitiesRadarChart');
+            if(capabilitiesRadarCtx) {
+                new Chart(capabilitiesRadarCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Design Security', 'Quality Control', 'Fabric Innovation', 'Customization', 'Technical Expertise', 'Ethical Standards'],
+                        datasets: [{
+                            label: 'Conbello Textile Core Competencies',
+                            data: [98, 95, 90, 96, 92, 97],
+                            backgroundColor: 'rgba(66, 153, 225, 0.2)',
+                            borderColor: chartColors.darkBlue,
+                            pointBackgroundColor: chartColors.darkBlue,
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: chartColors.darkBlue
+                        }]
+                    },
+                    options: {
+                        ...universalTooltipCallback,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    color: 'rgba(66, 153, 225, 0.2)'
+                                },
+                                grid: {
+                                    color: 'rgba(66, 153, 225, 0.2)'
+                                },
+                                pointLabels: {
+                                    color: chartColors.lightBlue,
+                                    font: {
+                                        size: 12,
+                                        weight: 'bold'
+                                    }
+                                },
+                                ticks: {
+                                    backdropColor: chartColors.darkBackground,
+                                    color: chartColors.steelBlue,
+                                    stepSize: 20
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: chartColors.lightBlue
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const printingTechBarCtx = document.getElementById('printingTechBarChart');
+            if(printingTechBarCtx) {
+                new Chart(printingTechBarCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            ['3D Printing,', 'DTG, DTF, etc.'],
+                            ['Real Silicone', 'Printing Types'],
+                            'Embroidery',
+                            ['Nano-Technological', 'Printing'],
+                            ['Screen Printing', '(Water-based)'],
+                            ['Screen Printing', '(High-pressure)'],
+                            ['Screen Printing', '(Plastisol)'],
+                            ['Laser Engraving', 'Logo']
+                        ],
+                        datasets: [{
+                            label: 'Technical Complexity Score',
+                            data: [85, 90, 75, 95, 70, 80, 78, 88],
+                            backgroundColor: [
+                                chartColors.steelBlue,
+                                chartColors.darkBlue,
+                                chartColors.steelBlue,
+                                chartColors.darkBlue,
+                                chartColors.powderBlue,
+                                chartColors.powderBlue,
+                                chartColors.powderBlue,
+                                chartColors.steelBlue
+                            ],
+                            borderColor: chartColors.darkBackground,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        ...universalTooltipCallback,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        plugins: {
+                            ...universalTooltipCallback.plugins,
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: chartColors.lightBlue
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    color: 'rgba(66, 153, 225, 0.1)'
+                                },
+                                ticks: {
+                                    color: chartColors.lightBlue,
+                                    font: {
+                                        weight: '600'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const productionFocusDonutCtx = document.getElementById('productionFocusDonutChart');
+            if(productionFocusDonutCtx) {
+                new Chart(productionFocusDonutCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Performance Sportswear', 'High-End Athleisure', 'Technical & Military-Grade'],
+                        datasets: [{
+                            label: 'Production Focus',
+                            data: [60, 30, 10],
+                            backgroundColor: [
+                                chartColors.darkBlue,
+                                chartColors.steelBlue,
+                                chartColors.powderBlue
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        ...universalTooltipCallback,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                             ...universalTooltipCallback.plugins,
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    color: chartColors.lightBlue,
+                                    font: {
+                                        weight: 'bold'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+    </script>
+
+</body>
+</html>
